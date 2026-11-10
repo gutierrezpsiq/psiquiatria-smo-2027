@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fluxos de atendimento | Psiquiatria SMO · 2027</title>
+<style>
+:root{--navy:#164b39;--blue:#24704d;--green:#176947;--text:#243b30;--muted:#62796c;--line:#d5e5da;--bg:#f3f8f4;--soft:#edf7f0;--amber:#895b19;--red:#a03636}*{box-sizing:border-box}body{font:15px/1.55 system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);margin:0}header{background:linear-gradient(120deg,#123f2f,#287451);color:white;padding:30px max(18px,calc((100% - 1120px)/2))}header p{max-width:720px;color:#e2f2e7;margin:7px 0 0}h1{font-size:clamp(25px,4vw,35px);line-height:1.15;margin:4px 0}h2{margin:0 0 8px;font-size:22px}h3{font-size:17px}main{max-width:1120px;margin:24px auto 70px;padding:0 18px}.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:20px}.nav{align-self:start;position:sticky;top:18px}.nav h2{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin:0 0 10px}.nav button{width:100%;text-align:left;border:1px solid var(--line);background:white;color:#2e5840;padding:13px;margin-bottom:7px;border-radius:10px;font:700 14px system-ui;cursor:pointer}.nav button.active{background:var(--navy);color:white;border-color:var(--navy)}.card{background:white;border:1px solid var(--line);border-radius:15px;padding:25px;box-shadow:0 4px 15px #164a300a}.sub{color:var(--muted);margin:0 0 20px}.eyebrow{font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.12em;color:var(--green)}.step{border-top:1px solid var(--line);padding:18px 0}.step:first-of-type{border-top:0}.step h3{margin:0 0 9px}.options{display:grid;gap:8px;grid-template-columns:repeat(2,minmax(0,1fr))}.option{border:1px solid #bcd8c6;border-radius:10px;background:white;color:var(--text);padding:12px;text-align:left;font:inherit;cursor:pointer}.option.sel{background:#e8f6eb;border:2px solid #238353;padding:11px;font-weight:700}.option:focus-visible,.nav button:focus-visible{outline:3px solid #e9a744;outline-offset:2px}.hint{color:var(--muted);font-size:12px;margin:9px 0 0}.out{margin-top:20px;padding:22px;border-left:5px solid var(--green);border-radius:12px;background:#eaf7ed}.out.warn{border-color:#be8c34;background:#fff7e8}.out.danger{border-color:#b84b4b;background:#fff0f0}.out h3{margin:5px 0 9px;font-size:21px}.out p{margin:8px 0}.out ol{padding-left:19px}.out li{margin:7px 0}.tag{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--green)}.warn .tag{color:var(--amber)}.danger .tag{color:var(--red)}.rules{font-size:12px;border-top:1px solid #cbded0;padding-top:9px;margin-top:15px;color:#567363}.buttons{display:flex;gap:9px;margin-top:18px;flex-wrap:wrap}.buttons button{border:1px solid #b2d0bd;border-radius:9px;background:white;padding:10px 15px;font-weight:750;color:var(--blue);cursor:pointer}.buttons button.primary{background:var(--blue);color:white;border-color:var(--blue)}.mini{font-size:13px;color:var(--muted)}.pill{display:inline-block;background:#e0f2e5;color:var(--green);border-radius:30px;padding:3px 9px;font-size:11px;font-weight:800}.footer{font-size:12px;color:var(--muted);margin:18px 0}.progress{color:var(--muted);font-size:12px;margin:0 0 15px}.notice{background:#f2f8f3;padding:13px 15px;border:1px solid var(--line);border-radius:10px}.hidden{display:none}.ref details{border-top:1px solid var(--line);padding:10px 0}.ref summary{cursor:pointer;font-weight:700}.inline-help{margin:10px 0 0;border:1px solid var(--line);border-radius:10px;background:#f2f8f3;padding:10px 13px}.inline-help summary{cursor:pointer;font-weight:700;color:var(--blue);list-style-position:inside}.inline-help div{padding:8px 0 0 3px;font-size:14px}.inline-help ul{margin:6px 0 0;padding-left:20px}.inline-help li{margin:4px 0}.inline-help p{margin:5px 0}.criteria{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0}.criterion{border:1px solid var(--line);background:#f7fbf8;border-radius:11px;padding:13px 15px}.criterion h4{margin:0 0 7px;font-size:14px}.criterion ul{margin:0;padding-left:19px;font-size:13px}.criterion li{margin:4px 0}.criterion p{margin:6px 0;font-size:13px}@media(max-width:800px){.criteria{grid-template-columns:1fr}}@media(max-width:760px){.layout{grid-template-columns:1fr}.nav{position:static;display:flex;overflow:auto;gap:6px;align-items:center}.nav h2{display:none}.nav button{white-space:nowrap;width:auto;flex:0 0 auto}.options{grid-template-columns:1fr}.card{padding:18px}header{padding:24px 18px}}@media print{header{background:white;color:black}.nav,.buttons{display:none}.layout{display:block}main{padding:0}.card{box-shadow:none}}
+</style></head><body>
+<header><div style="font-size:11px;letter-spacing:.15em;font-weight:800;color:#c3eed1">SMO / HCPA · 2027</div><h1>Fluxos de atendimento em Psiquiatria</h1><p>Selecione sua área e siga as perguntas até a orientação final.</p></header>
+<main><div class="layout"><nav class="nav" aria-label="Contexto de atuação" id="nav"></nav><div><div class="card"><div class="eyebrow" id="sectionLabel"></div><h2 id="sectionTitle"></h2><p class="sub" id="sectionIntro"></p><div id="wizard" aria-live="polite"></div><div class="buttons"><button id="reset">Recomeçar</button><button id="print" onclick="window.print()">Imprimir</button></div></div><p class="footer">Ferramenta de apoio ao fluxo institucional. Não insira dados pessoais ou clínicos identificáveis. As respostas não são armazenadas nem enviadas.</p></div></div></main>
+<script>
+'use strict';
+const departments={
+ secretaria:['Secretaria','Agendamentos','Confira os dados necessários e siga a orientação.'],
+ acolhimento:['Acolhimento · Enfermagem','Definir atendimento','Identifique os critérios clínicos e veja a conduta correspondente.'],
+ medtrab:['Medicina do Trabalho','Definir atendimento','Identifique os critérios clínicos e veja a conduta correspondente.'],
+ psicologia:['Psicologia do Trabalho','Definir atendimento','Identifique os critérios clínicos e veja a conduta correspondente.'],
+ social:['Serviço Social do Trabalho','Definir atendimento','Identifique os critérios clínicos e veja a conduta correspondente.'],
+ clinico:['SMO Clínico','Definir atendimento','Identifique os critérios clínicos e veja a conduta correspondente.'],
+ psiquiatra:['Psiquiatra SMO','Decisões assistenciais','Defina a conduta e informe à Secretaria quando houver agendamento.']
+};
+let role='secretaria',state={};const $=id=>document.getElementById(id);
+function q(id,title,choices,hint=''){
+ const v=state[id];return `<section class="step"><h3>${title}</h3><div class="options">${choices.map(([key,label])=>`<button type="button" class="option ${v===key?'sel':''}" data-question="${id}" data-value="${key}" aria-pressed="${v===key}">${label}</button>`).join('')}</div>${hint?`<p class="hint">${hint}</p>`:''}</section>`;
+}
+function set(id,value){
+ state[id]=value;
+ const order=role==='secretaria'?['intent','urgentOrigin','origin','prior','miss','authorized']:role==='psiquiatra'?['intent','priority']:(state.risk==='low'?['risk','slot','same','turn','occupational','external']:['risk','same','turn','slot','remanejo','occupational','external']);
+ const idx=order.indexOf(id);if(idx>=0)order.slice(idx+1).forEach(k=>delete state[k]);render();
+}
+function result(title,body,kind='ok',source=''){
+ return `<div class="out ${kind==='ok'?'':kind}" role="status"><div class="tag">Orientação</div><h3>${title}</h3><p>${body}</p>${source?`<div class="rules">Base: ${source}</div>`:''}</div>`;
+}
+const portHelp='<details class="inline-help"><summary>Quais são as portas de entrada?</summary><div><ul><li>Acolhimento da Enfermagem</li><li>Medicina do Trabalho</li><li>Psicologia do Trabalho</li><li>Serviço Social do Trabalho</li><li>SMO Clínico</li></ul><p>O encaminhamento deve vir de um desses profissionais. O próprio funcionário não é uma porta de entrada.</p></div></details>';
+const riskCriteria=`<div class="criteria" aria-label="Critérios clínicos do protocolo">
+ <div class="criterion"><h4>Critérios de risco moderado e grave — item 2.3.2.1</h4><ul>
+ <li>Risco de suicídio atual ou recente</li><li>Risco de auto ou heteroagressão pelos sintomas agudos</li>
+ <li>Risco ocupacional com potencial de prejuízo a terceiros pelos sintomas agudos</li><li>Risco de exposição moral pelos sintomas agudos</li>
+ <li>Risco de prejuízo financeiro pelos sintomas agudos</li><li>Sintomas psicóticos agudos</li>
+ <li>Sinais de intoxicação ou de abstinência relacionada ao uso de substâncias psicoativas</li></ul></div>
+ <div class="criterion"><h4>Risco leve — item 2.3.2.2</h4><ul>
+ <li>Risco ocupacional sem potencial de prejuízo a terceiros pelos sintomas agudos</li>
+ <li>Internação psiquiátrica com alta recente</li>
+ <li>Urgência motivada por retorno ao trabalho antes da próxima consulta eletiva disponível</li>
+ <li>Urgência motivada por outros fatores ocupacionais que necessitem avaliação com brevidade</li></ul></div>
+ </div>`;
+function priorText(){return ['never','old'].includes(state.prior)?'PC':state.prior==='recent'?'RE ou PC, conforme agenda':'PC ou RE, conforme indicação';}
+function missing(title){return result(title,'Confirme o dado antes de agendar.','warn');}
+function booking(){
+ let h=q('miss','Houve duas faltas nos últimos 90 dias?',[['trigger','Sim'],['no','Não']],'Inclua faltas consecutivas ou não consecutivas. Cancelamentos antecipados não são faltas.');
+ if(!state.miss)return h;
+ if(state.miss==='no')return h+result('Agendar '+priorText(), 'Utilize o primeiro horário disponível do tipo indicado (PC/CO ou RE), conforme a agenda.','ok','Regulação PSF 2027');
+ h+='<div class="notice"><strong>Antes de remarcar:</strong> a Secretaria deve encaminhar internamente o pedido e o histórico das faltas ao(à) psiquiatra de referência do SMO, para definir se o atendimento precisa ser antecipado ou pode aguardar a próxima abertura de agenda. O funcionário não precisa marcar uma consulta externa para essa decisão.</div>';
+ h+=q('authorized','Qual foi a decisão do(a) psiquiatra de referência?',[['pending','Ainda não houve resposta'],['early','Antecipar atendimento'],['routine','Aguardar próxima abertura']]);
+ if(!state.authorized||state.authorized==='pending')return h+result('Solicitar decisão interna','A Secretaria encaminha o pedido e o histórico de faltas ao(à) psiquiatra de referência. Não agendar até receber a orientação.','warn','Regra de faltas 2027');
+ if(state.authorized==='early')return h+result('Agendar conforme orientação clínica','Utilize a modalidade e o prazo indicados pelo(a) psiquiatra de referência, inclusive para eventual encaixe.','warn','Regra de faltas 2027');
+ if(state.authorized==='routine')return h+result('Aguardar a próxima abertura de agenda','Agendar '+priorText()+' somente quando a próxima agenda for aberta. Não utilizar vagas já disponíveis.','ok','Regra de faltas 2027');
+ return h;
+}
+function secretary(){
+ let h=q('intent','O que o funcionário precisa?',[['book','Consulta eletiva (PC/CO/RE)'],['urgent','Atendimento de urgência (AU)/Pronto atendimento (PA)'],['question','Como acessar o serviço']]);
+ if(!state.intent)return h;
+ if(state.intent==='urgent'){
+  h+=q('urgentOrigin','Quem indicou o atendimento PA/AU?',[['team','Profissional de uma porta de entrada'],['psiq','Psiquiatra SMO'],['self','O próprio funcionário']]);
+  h+=portHelp;
+  if(!state.urgentOrigin)return h;
+  if(state.urgentOrigin==='self')return h+result('Encaminhar à equipe assistencial','O pedido direto do funcionário não libera vaga PA/AU. Oriente o Acolhimento da Enfermagem para avaliação da demanda. Se houver indicação de risco imediato, acione a equipe assistencial no momento, sem aguardar vaga.','warn','Protocolo PSF 2.2.1');
+  return h+result('Verificar vaga PA/AU','Confira a orientação do profissional solicitante e a disponibilidade de vagas PA/AU. Se não houver vaga no prazo indicado, informe imediatamente o solicitante para providenciar a conduta assistencial prevista para o caso.','ok','Protocolo PSF 2.2.1 e 2.3.3');
+ }
+ h+=q('origin','Quem está solicitando?',[['team','Profissional de uma porta de entrada'],['self','O próprio funcionário']]);
+ h+=portHelp;
+ if(!state.origin)return h;
+ h+=q('prior','Quando foi a última consulta na Psiquiatria SMO?',[['never','Nunca foi atendido'],['recent','Há menos de 6 meses'],['old','Há mais de 6 meses']]);
+ if(!state.prior)return h;
+ if(state.prior==='never'){
+  if(state.origin==='self')return h+result('Orientar acolhimento pela Enfermagem','Para quem nunca foi atendido na Psiquiatria SMO e procura a Secretaria diretamente, a entrada é pelo Acolhimento da Enfermagem.','ok','Protocolo PSF 2.2.2.2.1');
+  return h+result('Agendar primeira consulta (PC/CO)','Com encaminhamento de uma das portas de entrada, agende uma vaga de primeira consulta (PC/CO), conforme disponibilidade.','ok','Protocolo PSF 2.1 e 2.2.2.1');
+ }
+ if(state.prior==='old')return h+result('Agendar PC/CO','A última consulta ocorreu há mais de 6 meses. Utilize a primeira vaga disponível de PC/CO, conforme a agenda.','ok','Protocolo PSF 2.2.2; regulação 2027');
+ return h+booking();
+}
+function assistance(){
+ let h=`<section class="step"><h3>Há indicação de atendimento de urgência?</h3><p class="mini">Confira os critérios do protocolo (item 2.3.2), na ordem de prioridade:</p>${riskCriteria}</section>`;
+ h+=q('risk','Como você classifica o risco?',[['moderate-severe','Moderado/grave'],['low','Leve'],['none','Sem critérios de urgência']]);
+ if(!state.risk)return h;
+ if(state.risk==='moderate-severe'){
+  h+=q('same','Precisa de avaliação no mesmo dia?',[['yes','Sim'],['no','Não']]);
+  if(!state.same)return h;
+  if(state.same==='no')return h+result('Definir a prioridade com o psiquiatra SMO','O caso apresenta critérios do grupo de risco moderado ou grave. Discuta com a Psiquiatria Ocupacional o prazo e a forma de atendimento. Não classifique automaticamente como consulta eletiva.','warn','Protocolo PSF 2.3.2.1 e 2.3.3');
+  h+=q('turn','O psiquiatra SMO está em seu turno de trabalho?',[['yes','Sim'],['no','Não']]);
+  if(!state.turn)return h;
+  if(state.turn==='no')return h+result('Acionar o plantão de Psiquiatria','Fora do turno do psiquiatra SMO, chame o plantão: Psiquiatria Adulto (bip 17275 / 99815-9563) ou Psiquiatria de Adição (bip 17265 / 99509-2914). Solicite à Secretaria horário de Medicina do Trabalho (MT) e peça ao plantonista registro em Notas do AGHUse.','danger','Protocolo PSF 2.3.3.1.4 e 2.3.3.2');
+  h+=q('slot','Há vaga PA/AU disponível no mesmo dia?',[['yes','Sim'],['no','Não']]);
+  if(!state.slot)return h;
+  if(state.slot==='yes')return h+result('Solicitar PA/AU para hoje','Peça o agendamento à Secretaria, durante o turno do psiquiatra SMO.','danger','Protocolo PSF 2.3.3.1.1');
+  h+='<div class="notice"><strong>Antes de acionar o plantão:</strong> sem vaga PA/AU disponível, discuta com o psiquiatra do SMO a possibilidade de remanejar os horários para atender o funcionário no mesmo dia.</div>';
+  h+=q('remanejo','Após discutir com o psiquiatra SMO, é possível remanejar os horários?',[['yes','Sim'],['no','Não']]);
+  if(!state.remanejo)return h;
+  if(state.remanejo==='yes')return h+result('Organizar atendimento no mesmo dia','Siga o remanejo definido pelo psiquiatra SMO e comunique à Secretaria o horário autorizado.','danger','Protocolo PSF 2.3.3.1.2');
+  return h+result('Acionar o plantão de Psiquiatria','Sem vaga PA/AU e sem possibilidade de remanejo, chame o plantão: Psiquiatria Adulto (bip 17275 / 99815-9563) ou Psiquiatria de Adição (bip 17265 / 99509-2914). Solicite à Secretaria horário MT e registro da avaliação em Notas do AGHUse pelo plantonista.','danger','Protocolo PSF 2.3.3.1.3 e 2.3.3.2');
+ }
+ if(state.risk==='low'){
+  h+=q('slot','Há vaga PA/AU, PC ou RE disponível no prazo necessário?',[['yes','Sim'],['no','Não']]);
+  if(!state.slot)return h;
+  if(state.slot==='yes')return h+result('Solicitar agendamento','Peça à Secretaria o primeiro horário PA/AU, PC ou RE que atenda à necessidade identificada.','ok','Protocolo PSF 2.3.4.1');
+  h+=q('same','O caso precisa ser avaliado hoje?',[['yes','Sim'],['no','Não']]);
+  if(!state.same)return h;
+  if(state.same==='no')return h+result('Discutir com a Psiquiatria Ocupacional','Não havendo vaga no prazo necessário, discuta a prioridade e a conduta com o psiquiatra SMO. Não direcione para outra lista ou seção.','warn','Protocolo PSF 2.3.2.2 e regulação assistencial 2027');
+  h+=q('turn','Há psiquiatra do SMO presente?',[['yes','Sim'],['no','Não']]);
+  if(!state.turn)return h;
+  if(state.turn==='yes')return h+result('Discutir atendimento no mesmo dia','Entre em contato com a Psiquiatria Ocupacional para definir a necessidade e a possibilidade de atendimento hoje.','warn','Regulação assistencial 2027');
+  return h+result('Acionar o plantão de Psiquiatria','Se a avaliação não pode aguardar e não há psiquiatra SMO presente, chame o plantão: Psiquiatria Adulto (bip 17275 / 99815-9563) ou Psiquiatria de Adição (bip 17265 / 99509-2914). Solicite à Secretaria horário de Medicina do Trabalho (MT) e peça ao plantonista que registre a avaliação em Notas do AGHUse.','danger','Protocolo PSF 2.3.3.1.4 e 2.3.3.2; encaminhamento de avaliação no mesmo dia');
+ }
+ h+=q('occupational','Sem critérios de urgência, qual é a situação?',[['acute-work','Sofrimento psíquico agudo relacionado ao trabalho'],['nonacute-nonwork','Sintomas não agudos, sem relação com o trabalho'],['external-followup','Já faz acompanhamento com psiquiatra fora do SMO'],['outside','Sem indicação identificada de avaliação psiquiátrica no SMO']]);
+ if(!state.occupational)return h;
+ if(state.occupational==='nonacute-nonwork')return h+result('Orientar acompanhamento fora da Psiquiatria SMO','Se não possui acompanhamento externo, oriente avaliação e seguimento pelo plano de saúde (psiquiatria e/ou psicoterapia) ou, se não tiver plano, pela Atenção Primária. Quando apropriado, o Acolhimento da Enfermagem pode orientar a melhor porta de cuidado.','ok','Protocolo PSF 2.4.1');
+ if(state.occupational==='external-followup')return h+result('Orientar contato com o psiquiatra assistente','Se a demanda puder ser conduzida no tratamento externo, oriente contato com o psiquiatra que já acompanha o funcionário. Se houver necessidade de avaliação ocupacional específica no SMO, discuta a indicação de encaminhamento com o psiquiatra SMO. Se surgirem critérios de urgência, aplique as orientações de risco acima.','ok','Protocolo PSF 2.3.1.1, 2.4 e orientação de fluxo 2027');
+ if(state.occupational==='outside')return h+result('Orientar o serviço adequado à necessidade','Não solicitar consulta psiquiátrica SMO sem indicação identificada. Oriente atendimento no serviço pertinente. O Acolhimento da Enfermagem permanece acessível a todos os funcionários para auxiliar na definição do encaminhamento. Dúvidas assistenciais podem ser discutidas com o psiquiatra SMO.','ok','Caracterização PSF e fluxo institucional 2027');
+ h+=q('external','O funcionário já faz acompanhamento psiquiátrico externo?',[['yes','Sim'],['no','Não']]);
+ if(!state.external)return h;
+ if(state.external==='yes')return h+result('Orientar psiquiatra assistente ou discutir necessidade ocupacional','Oriente contato com o psiquiatra assistente para cuidados clínicos; se houver necessidade de avaliação ocupacional no SMO, discuta a indicação com o psiquiatra SMO antes de solicitar vaga.','warn','Protocolo PSF 2.3.1.1');
+ return h+result('Solicitar consulta eletiva (PC/CO/RE)','Encaminhe à Secretaria para agendamento de primeira consulta (PC/CO) ou retorno (RE), conforme histórico e modalidade indicada. A Secretaria realiza a conferência administrativa de faltas.','ok','Protocolo PSF 2.3.1.1 e fluxo 2027');
+}
+function psychiatry(){
+ let h=q('intent','Qual decisão é necessária?',[['misses','Pedido de remarcação da Secretaria'],['clinical','Conduta assistencial']]);
+ if(!state.intent)return h;
+ if(state.intent==='clinical')return h+result('Definir conduta e destino assistencial','Avalie a indicação de AU/PA, consulta eletiva (PC/CO/RE) ou seguimento na rede externa. Para agendamentos, informe modalidade e prioridade à Secretaria. Caso não esteja clara a indicação, o Acolhimento da Enfermagem, de acesso universal, pode auxiliar na definição do encaminhamento.','ok','Protocolo PSF 2.3–4; organização 2027');
+ h+=q('priority','É necessário antecipar o atendimento?',[['yes','Sim, antes da próxima abertura'],['no','Não, pode aguardar a próxima abertura'],['notindicated','Não há indicação de nova consulta no SMO'],['uncertain','É preciso obter informações adicionais']]);
+ if(!state.priority)return h;
+ if(state.priority==='yes')return h+result('Autorizar antecipação','Informe à Secretaria a modalidade e o prazo indicado, incluindo eventual encaixe.','warn','Regra de faltas 2027');
+ if(state.priority==='no')return h+result('Agendar na próxima abertura','Informe à Secretaria que o agendamento deverá ocorrer apenas na próxima abertura de agenda.','ok','Regra de faltas 2027');
+ if(state.priority==='notindicated')return h+result('Não indicar nova consulta','Registre a decisão e oriente o destino assistencial adequado, quando houver. Pode ser oferecido Acolhimento da Enfermagem, de acesso universal, para melhor definição da necessidade e do encaminhamento.','ok','Protocolo PSF 2.1, 2.4; organização 2027');
+ return h+result('Orientar Acolhimento da Enfermagem','Oriente o funcionário a procurar o Acolhimento da Enfermagem, acessível a todos os funcionários, para reunir as informações necessárias e ajudar a definir a indicação de atendimento. Após o acolhimento, reavalie a necessidade de consulta na Psiquiatria SMO e informe a conduta à Secretaria.','warn','Fluxo assistencial 2027');
+}
+function render(){const d=departments[role];$('sectionLabel').textContent=d[0];$('sectionTitle').textContent=d[1];$('sectionIntro').textContent=d[2];$('wizard').innerHTML=role==='secretaria'?secretary():role==='psiquiatra'?psychiatry():assistance();document.querySelectorAll('[data-question]').forEach(b=>b.addEventListener('click',()=>set(b.dataset.question,b.dataset.value)));}
+function chooseRole(r){role=r;state={};document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.role===r));render();window.scrollTo({top:0,behavior:'instant'});}
+const nav=$('nav');nav.innerHTML='<h2>Área de atuação</h2>'+Object.entries(departments).map(([k,d])=>`<button data-role="${k}" type="button">${d[0]}</button>`).join('');nav.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>chooseRole(b.dataset.role)));$('reset').addEventListener('click',()=>{state={};render()});chooseRole('secretaria');
+</script></body></html>
